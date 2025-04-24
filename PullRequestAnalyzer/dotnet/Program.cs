@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 var key = Environment.GetEnvironmentVariable("OPENAI_API_KEY");
 var client = new ChatClient("o4-mini", key);
 const string prApiUrl = "https://api.github.com/repos/jquery/jquery/pulls/1357";
-var http = new HttpClient();
+using var http = new HttpClient();
 http.DefaultRequestHeaders.UserAgent.ParseAdd("none");
 http.DefaultRequestHeaders.Accept.Add(
     new MediaTypeWithQualityHeaderValue("application/vnd.github.v3.diff"));
