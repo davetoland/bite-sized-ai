@@ -1,0 +1,65 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AltTextGenerator", "AltTextGenerator", "{28357EC3-8FEA-B309-7DC0-FE51AB9F3864}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MovieRecommender", "MovieRecommender", "{6857742D-FF9D-6017-D2B6-9582DE630E67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PullRequestAnalyzer", "PullRequestAnalyzer", "{5F868852-65DF-A66D-9D9F-92D16A7B6C45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VoiceTranscriber", "VoiceTranscriber", "{7D8D0FAE-402B-4EBA-5622-971BAE590EAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WeatherAgent", "WeatherAgent", "{C65AD7C6-8E0B-33A6-0F8F-614D173D51DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AltTextGenerator", "AltTextGenerator\dotnet\AltTextGenerator.csproj", "{068AB785-292F-6F8A-F4F1-3BC6E0DFA133}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRecommender", "MovieRecommender\dotnet\MovieRecommender.csproj", "{DABD9040-095E-190C-495E-FF0F3EE33CCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PullRequestAnalyser", "PullRequestAnalyzer\dotnet\PullRequestAnalyser.csproj", "{1D20091E-9CD0-06BB-CB4E-CBB57AF5831B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoiceTranscriber", "VoiceTranscriber\dotnet\VoiceTranscriber.csproj", "{333997CF-D3FF-C92B-A711-F8EBF2978CAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherAgent", "WeatherAgent\dotnet\WeatherAgent.csproj", "{5A094F9F-0A62-F633-A18D-05557D3F8330}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{068AB785-292F-6F8A-F4F1-3BC6E0DFA133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{068AB785-292F-6F8A-F4F1-3BC6E0DFA133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{068AB785-292F-6F8A-F4F1-3BC6E0DFA133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{068AB785-292F-6F8A-F4F1-3BC6E0DFA133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DABD9040-095E-190C-495E-FF0F3EE33CCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DABD9040-095E-190C-495E-FF0F3EE33CCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DABD9040-095E-190C-495E-FF0F3EE33CCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DABD9040-095E-190C-495E-FF0F3EE33CCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D20091E-9CD0-06BB-CB4E-CBB57AF5831B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D20091E-9CD0-06BB-CB4E-CBB57AF5831B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D20091E-9CD0-06BB-CB4E-CBB57AF5831B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D20091E-9CD0-06BB-CB4E-CBB57AF5831B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{333997CF-D3FF-C92B-A711-F8EBF2978CAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{333997CF-D3FF-C92B-A711-F8EBF2978CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{333997CF-D3FF-C92B-A711-F8EBF2978CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{333997CF-D3FF-C92B-A711-F8EBF2978CAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A094F9F-0A62-F633-A18D-05557D3F8330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A094F9F-0A62-F633-A18D-05557D3F8330}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A094F9F-0A62-F633-A18D-05557D3F8330}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A094F9F-0A62-F633-A18D-05557D3F8330}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{068AB785-292F-6F8A-F4F1-3BC6E0DFA133} = {28357EC3-8FEA-B309-7DC0-FE51AB9F3864}
+		{DABD9040-095E-190C-495E-FF0F3EE33CCA} = {6857742D-FF9D-6017-D2B6-9582DE630E67}
+		{1D20091E-9CD0-06BB-CB4E-CBB57AF5831B} = {5F868852-65DF-A66D-9D9F-92D16A7B6C45}
+		{333997CF-D3FF-C92B-A711-F8EBF2978CAF} = {7D8D0FAE-402B-4EBA-5622-971BAE590EAF}
+		{5A094F9F-0A62-F633-A18D-05557D3F8330} = {C65AD7C6-8E0B-33A6-0F8F-614D173D51DC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4B73A28-3C90-4C2A-BE4F-F85D25D48375}
+	EndGlobalSection
+EndGlobal

@@ -15,7 +15,7 @@ const subtitles = await client.chat.completions.create({
   model: 'gpt-4o-mini',
   messages: [
     {role: 'system', content: 'Turn this into word-level srt formatted text'},
-    {role: 'user', content: memo.text}
+    {role: 'user', content: JSON.stringify(memo.words)}
   ],
 });
 

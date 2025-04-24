@@ -1,4 +1,5 @@
 import os
+import json
 from openai import OpenAI
 
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
@@ -13,7 +14,7 @@ subtitles = client.chat.completions.create(
     model="gpt-4o-mini",
     messages=[
         {"role":"system","content":"Turn this into word-level srt formatted text"},
-        {"role":"user","content":memo.text}
+        {"role":"user","content":json.dumps(memo.words, default=lambda o: o.__dict__, indent=2)}
     ],
 )
 

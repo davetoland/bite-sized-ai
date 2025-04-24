@@ -1,3 +1,4 @@
+using System.Text.Json;
 using OpenAI.Audio;
 using OpenAI.Chat;
 
@@ -14,7 +15,7 @@ var chat = new ChatClient("gpt-4o-mini", key);
 var subtitles = await chat.CompleteChatAsync(
     new List<ChatMessage> {
         new SystemChatMessage("Turn this into word-level srt formatted text"),
-        new UserChatMessage(memo.Value.Text)
+        new UserChatMessage(JsonSerializer.Serialize(memo.Value.Words))
     });
 
 Console.WriteLine(subtitles.Value.Content[0].Text);
