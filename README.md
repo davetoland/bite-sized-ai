@@ -1,13 +1,13 @@
 # Bitesized AI
 
-**Bitesized AI** is a 5 part mini-series I've written, exploring concepts of applied AI using bite sized examples that interact with the OpenAI APIs. Each part consists of simplified code snippets, around 25-30 lines, each written in Python, NodeJS and C# .NET, to showcase some of the functionality available for you to use in your applications.
+**Bitesized AI** is a 5 part mini-series I've written, exploring concepts of applied AI using bite sized examples that interact with the OpenAI APIs. Each part consists of simplified code snippets, around 25-30 lines, each written in Python, JavaScript and C#, to showcase some of the functionality available for you to use in your applications.
 
-## Bitesized AI: 01 - Voice Transcriber (Whisper Transcriptions & Reasoning)
+## Bitesized AI: 01 - Voice Transcriber (Whisper Transcription)
 
 
 Here we're using Whisper, a powerful automatic speech recognition model for fast and accurate audio transcriptions. It can produce granular time-stamping, understand around 100 different languages, and can cope with accents, regional dialects, and many slang expressions.
 
-For this bitesized demo, we're transcribing some spoken audio using word-level timestamps. Then, by applying a single LLM post-processing step, we map those timestamps and text segments into SRT subtitle cues.
+For this bite sized demo, we're transcribing some spoken audio using word-level timestamps. Then, by applying a single LLM post-processing step, we map those timestamps and text segments into SRT subtitle cues.
 
 Key takeaways:
 
@@ -22,7 +22,7 @@ Key takeaways:
 
 Here we’re putting structured outputs front and center, which eliminates brittle regex parsing or flaky string hacks to pull data out of verbose AI replies. Instead, we force the model to match a predefined schema, so you get ready‑to‑use objects every time.
 
-For this bitesized demo, we're using a notorious PR from the jQuery repo that instantly broke backwards compatibility by removing two legacy methods. This code not only recognises the impact risk of the PR, but formats the output into a typed structure which can be easily ingested by dashboards, alert systems or CI gates.
+For this bite sized demo, we're using a notorious PR from the jQuery repo that instantly broke backwards compatibility by removing two legacy methods. This code not only recognises the impact risk of the PR, but formats the output into a typed structure which can be easily ingested by dashboards, alert systems or CI gates.
 
 Key takeaways:
 
@@ -37,7 +37,7 @@ Key takeaways:
 
 Here we’re combining AI’s creative power with automated storytelling. First, we prompt the image‑generation model to produce a custom graphic. Then, we feed that into a image-recognition-capable model with an additional prompt for analysis.
 
-For this bitesized demo, we’ll generate a generic picture of a bustling market scene, then have the AI analyse the image and produce HTML markup to display it, complete with accurate auto-generated alt-text to perfectly describe it for visually impaired visitors using a screen reader.
+For this bite sized demo, we’ll generate a generic picture of a bustling market scene, then have the AI analyse the image and produce HTML markup to display it, complete with accurate auto-generated alt-text to perfectly describe it for visually impaired visitors using a screen reader.
 
 Key takeaways:
 
@@ -52,7 +52,7 @@ Key takeaways:
 
 Here we’re harnessing embeddings to power semantic similarity search, enabling a lightweight movie-recommendation engine. We compute vector representations for each movie’s overview with OpenAI’s embedding model, upsert them into a Pinecone index, and then query that index for the nearest neighbors, dynamically surfacing films that are similar based on their content rather than their metadata.
 
-For this bitesized demo, we load the top 500 movies, embed each synopsis with text-embedding-ada-002, store the vectors in Pinecone, and finally run a similarity query (excluding the seed movie) to list the five most semantically related titles.
+For this bite sized demo, we load the top 500 movies, embed each synopsis with text-embedding-ada-002, store the vectors in Pinecone, and finally run a similarity query (excluding the seed movie) to list the five most semantically related titles.
 
 Key takeaways:
 
@@ -67,7 +67,7 @@ Key takeaways:
 
 Here we’re supercharging the model with programmatic actions, giving it the ability to call custom functions, the core building blocks of agentic AI systems. By defining a function schema we enable the model to output structured function‑call objects instead of plain text. Our code then executes those calls, passing each result back into the model for further processing. The AI decides how and when to call those functions, and furthermore what to do with the results.
 
-In this bitesized demo, we’ll register an API function to get weather data, feed a natural‑language user request in, and let the agent call the API as many times as it decides it needs to. Here we ask for info on 3 cities (London, Lisbon and Limassol) the agent realises it needs to provide latitude and longitude inputs to the API (which it produces), the JSON responses it gets are a mixture of relevant and irrelevant data with the key parts (temperature unit and value) in separate sections. It does its magic and extracts them, repeating this process for each city, before stitching them all together to produce a cohesive final structured reply.
+In this bite sized demo, we’ll register an API function to get weather data, feed a natural‑language user request in, and let the agent call the API as many times as it decides it needs to. Here we ask for info on 3 cities (London, Lisbon and Limassol) the agent realises it needs to provide latitude and longitude inputs to the API (which it produces), the JSON responses it gets are a mixture of relevant and irrelevant data with the key parts (temperature unit and value) in separate sections. It does its magic and extracts them, repeating this process for each city, before stitching them all together to produce a cohesive final structured reply.
 
 Key takeaways:
 
