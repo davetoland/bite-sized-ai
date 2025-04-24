@@ -1,6 +1,6 @@
 # Bitesized AI
 
-**Bitesized AI** is a 5 part mini-series I've written, exploring concepts of applied AI using bite sized examples that interact with the OpenAI APIs. Each part consists of simplified code snippets, around 25-30 lines, each written in Python, JavaScript and C#, to showcase some of the functionality available for you to use in your applications.
+**Bitesized AI** is a 5 part mini-series I've written, exploring concepts of applied AI using bite sized examples that interact with the OpenAI APIs. Each part consists of simplified code snippets, around 20-30 lines, each written in Python, JavaScript and C#, to showcase some of the functionality available for you to use in your applications.
 
 ## Bitesized AI: 01 - Voice Transcriber (Whisper Transcription)
 
